@@ -1,0 +1,34 @@
+@use "../util" as u;
+
+.preview {
+  margin-top: 5vh;
+  margin-inline: auto;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    background-color: #c89fa3;
+    padding: u.rem(15);
+    width: 70vw;
+    border-radius: u.rem(5) u.rem(5) 0 0;
+
+    .fire-icon {
+      height: clamp(u.rem(10), u.rem(14) + 1.5vw, u.rem(30));
+    }
+
+    .title {
+      padding-left: u.rem(10);
+      margin-bottom: 0;
+    }
+  }
+  &__markdown {
+    border: none;
+    width: 70vw;
+    height: 70vh;
+    padding: u.rem(20);
+    background-color: #fff;
+    color: #3c3a3a;
+    overflow-y: scroll;
+    border-radius: 0 0 u.rem(5) u.rem(5);
+  }
+}

@@ -1,0 +1,32 @@
+@use "../util" as u;
+
+.editor {
+  margin-inline: auto;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    background-color: #93b7be;
+    padding: u.rem(15);
+    border-radius: u.rem(5) u.rem(5) 0 0;
+    width: 50vw;
+
+    .fire-icon {
+      height: clamp(u.rem(10), u.rem(14) + 1.5vw, u.rem(30));
+    }
+
+    .title {
+      margin-bottom: 0;
+      padding-left: u.rem(10);
+    }
+  }
+  &__textarea {
+    border: none;
+    max-width: 50vw;
+    min-width: 50vw;
+    height: u.rem(240);
+    padding: u.rem(20);
+    overflow-y: scroll;
+    border-radius: 0 0 u.rem(5) u.rem(5);
+  }
+}
